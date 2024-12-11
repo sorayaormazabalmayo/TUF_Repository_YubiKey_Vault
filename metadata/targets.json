@@ -2,46 +2,22 @@
  "signatures": [
   {
    "keyid": "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a",
-   "sig": "3045022100d08c9c216476ef7524101c40d482e532ac80015ab37449419aa3a59c8b87487a022047c82c207fed631dd2bd3f3a5b75a57d8adc0d4ddc11d77278f31c4bab330aa8"
+   "sig": ""
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2025-12-11T11:54:12Z",
+  "expires": "2025-12-11T15:36:49Z",
   "spec_version": "1.0.31",
   "targets": {
-   "HelloWorld_1": {
+   "HelloWorld": {
     "hashes": {
-     "sha256": "f31bdd130b5bbc4d19a2bca4a3ee0ade65a5334a5d40523886d758554fb73ab9"
-    },
-    "length": 2142626
-   },
-   "HelloWorld_2": {
-    "hashes": {
-     "sha256": "0536e567ca7db44b6f2453ce3d9bc369efed489e0d2948c1571862baf6e14bad"
-    },
-    "length": 2142626
-   },
-   "HelloWorld_3": {
-    "hashes": {
-     "sha256": "5d19f2a2910b9f174c5d491bcd975a64de0ea54409e6ada423d340b7f1422307"
-    },
-    "length": 2142626
-   },
-   "HelloWorld_4": {
-    "hashes": {
-     "sha256": "9071269e079ce136e91424a5b8ae94050dd304334308d0ef56fde4ee6b77cbe3"
+     "sha256": "052bc2ba5b4f68e56bd80f71e13476e200820bee241f854e919730c522ad26a2"
     },
     "length": 2141893
-   },
-   "HelloWorld_5": {
-    "hashes": {
-     "sha256": "ce838c726798155be114139268777a20272d0625de5d1b98d857177e30024166"
-    },
-    "length": 2142626
    }
   },
-  "version": 8,
+  "version": 9,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
