@@ -79,8 +79,15 @@
   },
   "expires": "2026-01-08T08:56:11Z",
   "spec_version": "1.0.31",
-  "targets": {},
-  "version": 3,
+  "targets": {
+   "targets.txt": {
+    "hashes": {
+     "sha256": "56f5ad8f5d9c2b9985242624fb83c1bb4fc48ebbbd6d1f17b09877c20a5e3a96"
+    },
+    "length": 51
+   }
+  },
+  "version": 30,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }

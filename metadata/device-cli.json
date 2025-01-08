@@ -2,15 +2,28 @@
  "signatures": [
   {
    "keyid": "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a",
-   "sig": "3045022100832240de8b4e2b5be2edabd2a82fdfd2efe1f982fbaecfc04854d545679ff48d02207730a95bc0aba8531a1595be07e490e2e0865d02660a5499b36d41307b45510b"
+   "sig": "304502202e9438e4ba0fa11ee50b584fcff66a01c397320430c275bc6717f33e2134e302022100942b43a4d1fd31018e33ba7eb447ce2d4dba2ab91f7c58b0e71c961f83b0c2d9"
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2026-01-02T07:55:47Z",
+  "expires": "2026-01-02T13:15:08Z",
   "spec_version": "1.0.31",
-  "targets": {},
-  "version": 1,
+  "targets": {
+   "device-cli/device-cli-index.json": {
+    "hashes": {
+     "sha256": "2471576582074c2541c196dec1906161d19c0f62e00fc8870d4a1c64b4dab21f"
+    },
+    "length": 192
+   },
+   "device-cli/device-cli.txt": {
+    "hashes": {
+     "sha256": "4e2b27ae5b4ed3ca4f91d26d38b37a6bb4a04a96dea312ff27ff96b7ab9bb41c"
+    },
+    "length": 20
+   }
+  },
+  "version": 5,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
