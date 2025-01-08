@@ -2,7 +2,7 @@
  "signatures": [
   {
    "keyid": "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a",
-   "sig": "3045022077bb2189ad895e3545f580ecc12eb9d63a6f6ee2edc362ffce0f67615887556c022100992b9a7dc626382ae9e9e3d2124c1ba6cb06a83c9b41b5eb981b60fdf18b08d6"
+   "sig": ""
   }
  ],
  "signed": {
@@ -60,10 +60,24 @@
      ],
      "terminating": true,
      "threshold": 1
+    },
+    {
+     "keyids": [
+      "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a"
+     ],
+     "name": "space",
+     "paths": [
+      "space/*",
+      "space/*/*",
+      "space/*/*/*",
+      "space/*/*/*/*"
+     ],
+     "terminating": true,
+     "threshold": 1
     }
    ]
   },
-  "expires": "2026-01-02T08:45:54Z",
+  "expires": "2026-01-08T10:50:46Z",
   "spec_version": "1.0.31",
   "targets": {
    "targets.txt": {
@@ -73,7 +87,7 @@
     "length": 51
    }
   },
-  "version": 30,
+  "version": 31,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
