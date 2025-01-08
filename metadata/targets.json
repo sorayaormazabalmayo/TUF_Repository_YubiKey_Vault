@@ -2,7 +2,7 @@
  "signatures": [
   {
    "keyid": "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a",
-   "sig": "304502202024ec53e7f27d52838fd622d2b8852f469e916752e40ff17975f37a1aea0c6f022100a330877c298862650d9dfbf1a4b071e90ec427fb459addfe09ae1c1b8b71c1b9"
+   "sig": ""
   }
  ],
  "signed": {
@@ -77,7 +77,7 @@
     }
    ]
   },
-  "expires": "2026-01-08T08:56:11Z",
+  "expires": "2026-01-08T09:24:53Z",
   "spec_version": "1.0.31",
   "targets": {
    "targets.txt": {
@@ -87,7 +87,7 @@
     "length": 51
    }
   },
-  "version": 30,
+  "version": 31,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
