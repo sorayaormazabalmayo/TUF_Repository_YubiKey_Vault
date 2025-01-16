@@ -1,1 +1,10 @@
-{}
+{
+  "tunnel-integration": {
+    "length": 1113806,
+    "path": "https://artifactregistry.googleapis.com/v1/projects/polished-medium-445107-i9/locations/europe-southwest1/repositories/nebula-storage/files//v2025.01.16-633885ced0be3efb3fa47a5391fb17f8b03d14b600fd082d8c1cbd2377d750b3/tunnel-integration.zip?alt=media",
+    "hashes": {
+      "sha256": "633885ced0be3efb3fa47a5391fb17f8b03d14b600fd082d8c1cbd2377d750b3"
+    },
+    "version": "v2025.01.16-633885ced0be3efb3fa47a5391fb17f8b03d14b600fd082d8c1cbd2377d750b3"
+  }
+}
