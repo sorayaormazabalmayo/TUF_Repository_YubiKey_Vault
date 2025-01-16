@@ -2,8 +2,8 @@
   "tunnel-integration": {
     "length": 1113806,
     "hashes": {
-      "sha256": "40dbd79813db510049404444c6a1e154f6668fa1724d1f5cc5b117eeb9f305ff"
+      "sha256": "6fc6f4622b8497238857e17c54b5f2dcad62ebf45a6faee77d97dec9c22acb4d"
     },
-    "version": "v2025.01.16-40dbd79813db510049404444c6a1e154f6668fa1724d1f5cc5b117eeb9f305ff"
+    "version": "v2025.01.16-6fc6f4622b8497238857e17c54b5f2dcad62ebf45a6faee77d97dec9c22acb4d"
   }
 }
