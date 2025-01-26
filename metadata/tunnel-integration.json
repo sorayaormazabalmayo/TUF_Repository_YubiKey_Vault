@@ -2,17 +2,17 @@
  "signatures": [
   {
    "keyid": "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a",
-   "sig": "3045022100e8919d03496a333498e31504fda67dd8e1edf98bcff6fb11c1d982cee974fbee02203e3bdfbbe9c5a9566b293544f49418e7e21cc7f204bd6552ea8e39f3a93705bc"
+   "sig": "3044022036feb824a8b1a8a59dede066d2d5c623c4c2d89c10157e1cfc4004040479d2b1022010d27dc133108a8b607b6e0c1950a5be8004972efec53f11afa58d4d48aab104"
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2026-01-26T16:05:35Z",
+  "expires": "2026-01-26T16:18:27Z",
   "spec_version": "1.0.31",
   "targets": {
    "tunnel-integration/tunnel-integration-index.json": {
     "hashes": {
-     "sha256": "94c28d5e0bb50d93dfd67d532c6909b7cf0acb0fc67bd557129f942180aeb5a7"
+     "sha256": "9c54e554c539a01c36bd3f7b40795836be1cd19f6b8441b8de2d7945e45d8de3"
     },
     "length": 601
    },
@@ -23,7 +23,7 @@
     "length": 20
    }
   },
-  "version": 19,
+  "version": 20,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
