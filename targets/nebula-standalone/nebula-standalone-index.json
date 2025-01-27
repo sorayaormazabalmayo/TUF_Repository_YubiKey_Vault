@@ -1,11 +1,11 @@
 {
   "nebula-standalone": {
     "bytes": "1.062",
-    "path": "https://artifactregistry.googleapis.com/download/v1/projects/polished-medium-445107-i9/locations/europe-southwest1/repositories/nebula-storage/files/nebula-standalone:v2025.01.27-ae267f214d000732164d9710c18e84d294765df6416cbee8b880417f1867a07e:nebula-standalone.zip:download?alt=media",
+    "path": "https://artifactregistry.googleapis.com/download/v1/projects/polished-medium-445107-i9/locations/europe-southwest1/repositories/nebula-storage/files/nebula-standalone:v2025.01.27-ba69c96a0c930a7286af29e2afeb6c38cda5e6365869b7369f09011122aacf4e:nebula-standalone.zip:download?alt=media",
     "hashes": {
-      "sha256": "ae267f214d000732164d9710c18e84d294765df6416cbee8b880417f1867a07e"
+      "sha256": "ba69c96a0c930a7286af29e2afeb6c38cda5e6365869b7369f09011122aacf4e"
     },
-    "version": "v2025.01.27-ae267f214d000732164d9710c18e84d294765df6416cbee8b880417f1867a07e",
-    "release-date": "2025.01.27.10.54.50"
+    "version": "v2025.01.27-ba69c96a0c930a7286af29e2afeb6c38cda5e6365869b7369f09011122aacf4e",
+    "release-date": "2025.01.27.11.24.51"
   }
 }
