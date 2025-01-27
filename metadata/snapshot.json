@@ -2,12 +2,12 @@
  "signatures": [
   {
    "keyid": "acfcd243f8f265eaa360f8a2a0d31b793a0b194030056a36f6aca09d9a0077a0",
-   "sig": "3045022009d26ea859c0b497f496421c1901cac6a27ab3f6364f9eeccc23f9139f5afc59022100a27c691629cd27410cdedd986b79d11cbb1bb55b2678ff4b9e5e43e60928454e"
+   "sig": "3044022019e77f5b169d07df3f2cd16934f551e5f2b4f8fd8e50036e51dedecc1d442f0b02204b5b45572277d9a875557bbedffaa7e2fabc0c6064da5f3e0a6ddd8279a59c3d"
   }
  ],
  "signed": {
   "_type": "snapshot",
-  "expires": "2026-01-27T07:27:09Z",
+  "expires": "2026-01-27T09:10:50Z",
   "meta": {
    "device-cli.json": {
     "version": 7
@@ -22,10 +22,10 @@
     "version": 31
    },
    "tunnel-integration.json": {
-    "version": 23
+    "version": 24
    }
   },
   "spec_version": "1.0.31",
-  "version": 54
+  "version": 55
  }
 }
