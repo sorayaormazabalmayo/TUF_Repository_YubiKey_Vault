@@ -2,12 +2,12 @@
  "signatures": [
   {
    "keyid": "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a",
-   "sig": "3046022100c29944412b80aba175dc56c8bdd4b0026a5325ede224d3f91b4055212a8105b60221009dbb979f28e52cf2e4932249fa67bdd671a3604800c0689328ff6cd69228d6bd"
+   "sig": ""
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2026-01-27T09:08:44Z",
+  "expires": "2026-01-27T11:44:37Z",
   "spec_version": "1.0.31",
   "targets": {
    "tunnel-integration/tunnel-integration-index.json": {
@@ -15,15 +15,9 @@
      "sha256": "51661d53d890143c766076bf910124027a7118dbf282852b517ba0bef6e6979e"
     },
     "length": 601
-   },
-   "tunnel-integration/tunnel.txt": {
-    "hashes": {
-     "sha256": "0fe949b68a54a61d386b9fb0e8cee6738c0ce62dfea355f2274f4d6c3c723cc2"
-    },
-    "length": 20
    }
   },
-  "version": 24,
+  "version": 25,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
