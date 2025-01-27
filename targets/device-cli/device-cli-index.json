@@ -1,9 +1,11 @@
 {
   "device-cli": {
-    "length": 1823225,
+    "bytes": "1.062",
+    "path": "https://artifactregistry.googleapis.com/download/v1/projects/polished-medium-445107-i9/locations/europe-southwest1/repositories/nebula-storage/files/device-cli:v2025.01.27-a0fb00da85275efb97e01f377d4ea0cd0192856d90500dbc261a3cd7aad18bab:device-cli.zip:download?alt=media",
     "hashes": {
-      "sha256": "8c1dc9f5279a7f54d7a6124f810fdfcaa2482e920c85a75b08f7bb9dcefea08b"
+      "sha256": "a0fb00da85275efb97e01f377d4ea0cd0192856d90500dbc261a3cd7aad18bab"
     },
-    "version": "2025.01.09-10.44.38"
+    "version": "v2025.01.27-a0fb00da85275efb97e01f377d4ea0cd0192856d90500dbc261a3cd7aad18bab",
+    "release-date": "2025.01.27.09.48.26"
   }
 }
