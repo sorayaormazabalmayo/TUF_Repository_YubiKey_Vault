@@ -1,9 +1,11 @@
 {
   "nebula-standalone": {
-    "length": 1823225,
+    "bytes": "1.062",
+    "path": "https://artifactregistry.googleapis.com/download/v1/projects/polished-medium-445107-i9/locations/europe-southwest1/repositories/nebula-storage/files/nebula-standalone:v2025.01.27-4a6b76528200b9417639d67d9d6c25c913e6e44a701cdb401cc252567454f10b:nebula-standalone.zip:download?alt=media",
     "hashes": {
-      "sha256": "1839b20252002136ea29367883a1265bb1ef78e493605d3eed9718261b5b500e"
+      "sha256": "4a6b76528200b9417639d67d9d6c25c913e6e44a701cdb401cc252567454f10b"
     },
-    "version": "2025.01.09-10.44.38"
+    "version": "v2025.01.27-4a6b76528200b9417639d67d9d6c25c913e6e44a701cdb401cc252567454f10b",
+    "release-date": "2025.01.27.10.42.14"
   }
 }
