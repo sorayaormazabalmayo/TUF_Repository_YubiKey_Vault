@@ -2,12 +2,12 @@
  "signatures": [
   {
    "keyid": "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a",
-   "sig": "3045022064cbbdae43a498e6b794ffeba00df85cc1f8d7ae938025001c565cc9c8a2539e022100a0bea2606e6b7d5ff5b6ff8e80b752395a94ad1c6fb4a17c47c49cec35710372"
+   "sig": "304402204e6f0ed169ae49d0e6b6e5c8a98c136131828c7ec785feb69027dd27d2aa9b7c022006a1a277555a0b9acaa2475757203be474008469b864e58e3d728531d0d4ae27"
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2026-01-27T10:42:48Z",
+  "expires": "2026-01-27T10:55:44Z",
   "spec_version": "1.0.31",
   "targets": {
    "nebula-standalone/index.json": {
@@ -18,12 +18,12 @@
    },
    "nebula-standalone/nebula-standalone-index.json": {
     "hashes": {
-     "sha256": "1818c2eac71530d4eb3eca86d034661c86d0e1fd9b90891136aaa7a5dafb130a"
+     "sha256": "cd9715893cbc29752e17ca38445f2e4b4a6d1884ddde6909289061ffff43e190"
     },
     "length": 598
    }
   },
-  "version": 6,
+  "version": 7,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
