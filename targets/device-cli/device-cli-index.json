@@ -1,11 +1,11 @@
 {
   "device-cli": {
     "bytes": "1.062",
-    "path": "https://artifactregistry.googleapis.com/download/v1/projects/polished-medium-445107-i9/locations/europe-southwest1/repositories/nebula-storage/files/device-cli:v2025.01.27-dc9c7fcca747a54edfb1669e78d245de11005cce5f2cf81740500b611063da66:device-cli.zip:download?alt=media",
+    "path": "https://artifactregistry.googleapis.com/download/v1/projects/polished-medium-445107-i9/locations/europe-southwest1/repositories/nebula-storage/files/device-cli:v2025.01.28-5a0b3576edae6adfd048a5461d5d1294714654426ec5a8e05ea7234c8a0287f2:device-cli.zip:download?alt=media",
     "hashes": {
-      "sha256": "dc9c7fcca747a54edfb1669e78d245de11005cce5f2cf81740500b611063da66"
+      "sha256": "5a0b3576edae6adfd048a5461d5d1294714654426ec5a8e05ea7234c8a0287f2"
     },
-    "version": "v2025.01.27-dc9c7fcca747a54edfb1669e78d245de11005cce5f2cf81740500b611063da66",
-    "release-date": "2025.01.27.10.19.50"
+    "version": "v2025.01.28-5a0b3576edae6adfd048a5461d5d1294714654426ec5a8e05ea7234c8a0287f2",
+    "release-date": "2025.01.28.08.43.53"
   }
 }
