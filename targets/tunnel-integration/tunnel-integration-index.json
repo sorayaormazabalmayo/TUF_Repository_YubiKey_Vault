@@ -1,11 +1,11 @@
 {
   "tunnel-integration": {
     "bytes": "1.062",
-    "path": "https://artifactregistry.googleapis.com/download/v1/projects/polished-medium-445107-i9/locations/europe-southwest1/repositories/nebula-storage/files/tunnel-integration:v2025.01.27-7aafd3fe41e6439e4748f882cd70adcb27337dd134e0629b919d6c25086f1e5a:tunnel-integration.zip:download?alt=media",
+    "path": "https://artifactregistry.googleapis.com/download/v1/projects/polished-medium-445107-i9/locations/europe-southwest1/repositories/nebula-storage/files/tunnel-integration:v2025.01.27-e2248ca94ece3325553aae02f9ad4b3f6f9f0cd103a01b09ec2b7b71d7423201:tunnel-integration.zip:download?alt=media",
     "hashes": {
-      "sha256": "7aafd3fe41e6439e4748f882cd70adcb27337dd134e0629b919d6c25086f1e5a"
+      "sha256": "e2248ca94ece3325553aae02f9ad4b3f6f9f0cd103a01b09ec2b7b71d7423201"
     },
-    "version": "v2025.01.27-7aafd3fe41e6439e4748f882cd70adcb27337dd134e0629b919d6c25086f1e5a",
-    "release-date": "2025.01.27.09.08.14"
+    "version": "v2025.01.27-e2248ca94ece3325553aae02f9ad4b3f6f9f0cd103a01b09ec2b7b71d7423201",
+    "release-date": "2025.01.27.14.27.29"
   }
 }
