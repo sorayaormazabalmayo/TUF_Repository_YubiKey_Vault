@@ -162,7 +162,7 @@ echo "✅ Updated JSON File: $json_file"
 cat "$json_file"  # Print the final JSON for verification
 
 ## Showing the commands so that the developer can push the changes himself/herself
-
+echo "🚨 Commands for releasing the changes applied in commit $commit_hash to clients 🚨"
 echo "git add."
 echo "git commit -m "$tag""
-echo "git push $branch_name"
+echo "git push origin $branch_name"
