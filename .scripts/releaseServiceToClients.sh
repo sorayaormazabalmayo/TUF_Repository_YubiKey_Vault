@@ -138,29 +138,25 @@ json_file="${service}-index.json"
 if [[ -f "$json_file" ]]; then
   echo "✏️ Modifying existing $json_file"
   jq --arg service "$service" \
-   --arg bytes "$new_bytes" \
-   --arg path "$new_path" \
-   --arg sha256 "$new_sha256" \
-   --arg version "$new_version" \
-   --arg release_date "$new_release_date" \
-   '(.[$service] // {}) + {bytes: $bytes, path: $path, hashes: {sha256: $sha256}, version: $version, "release-date": $release_date}' \
-   "$json_file" > temp.json && mv temp.json "$json_file"
+     --arg bytes "$new_bytes" \
+     --arg path "$new_path" \
+     --arg sha256 "$new_sha256" \
+     --arg version "$new_version" \
+     --arg release_date "$new_release_date" \
+     '(.[$service] // {}) + {($service): {bytes: $bytes, path: $path, hashes: {sha256: $sha256}, version: $version, "release-date": $release_date}}' \
+     "$json_file" > temp.json && mv temp.json "$json_file"
 else
   echo "📄 Creating new $json_file"
-  cat <<EOF > "$json_file"
-{
-  "$service": {
-    "bytes": "$new_bytes",
-    "path": "$new_path",
-    "hashes": {
-      "sha256": "$new_sha256"
-    },
-    "version": "$new_version",
-    "release-date": "$new_release_date"
-  }
-}
-EOF
+  jq -n --arg service "$service" \
+        --arg bytes "$new_bytes" \
+        --arg path "$new_path" \
+        --arg sha256 "$new_sha256" \
+        --arg version "$new_version" \
+        --arg release_date "$new_release_date" \
+        '{($service): {bytes: $bytes, path: $path, hashes: {sha256: $sha256}, version: $version, "release-date": $release_date}}' \
+        > "$json_file"
 fi
+
 echo "✅ Updated JSON File: $json_file"
 cat "$json_file"  # Print the final JSON for verification
 
