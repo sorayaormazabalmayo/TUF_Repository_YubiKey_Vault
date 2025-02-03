@@ -30,9 +30,7 @@ if [[ -z "${commit_hash}" ]]; then
 fi
 
 # Step 6: Checking if the service provided is an existing service 
-
 current_service_names=$(find targets -mindepth 1 -maxdepth 1 -type d -printf "%f\n")
-
 found=false
 
 for current_service in $current_service_names; do
@@ -44,6 +42,8 @@ for current_service in $current_service_names; do
     echo "This service currently does not exist"
   fi
 done
+
+# Step 7: Checking that the provided service and commit had not been compromised
 
 ## Now, before releasing the updates to the clients, I would like to ensure that there has not been any man in the middle. 
 ## For doing so, the hash from GitHub Release and the GAR are going to be compared.
@@ -115,18 +115,17 @@ else
     exit 1
 fi
 
-## Creating the branch sign/ for updating the -index that is going to be provided to the client
+# Step 8: Creating the branch sign/ for updating the -index that is going to be provided to the client
 
 branch_name="sign/$commit_hash"
 git branch $branch_name
-
 echo "Changed to branch $branch_name"
 
-## Going to the targets repository, exactly to the folder of the service that wants to be modified
+# Step 9: Going to the targets repository, exactly to the folder of the service that wants to be modified
 
 cd targets/${service}
 
-## Setting the variables for modifying the index.json
+# Step 10: Setting the variables for modifying the index.json
 
 new_bytes=$size_GARRelease
 new_path="https://artifactregistry.googleapis.com/download/v1/projects/polished-medium-445107-i9/locations/europe-southwest1/repositories/nebula-storage/files/$service:$tag:$service:download?alt=media"
@@ -134,6 +133,8 @@ new_sha256=$sha256_GARRelease
 new_version=$tag
 new_release_date=$(TZ="Europe/Madrid" date +"%Y.%m.%d.%H.%M.%S")
 json_file="${service}-index.json"
+
+# Step 11: Creating the new target json that will allow the client to download the last artifact
 
 if [[ -f "$json_file" ]]; then
   echo "✏️ Overwriting existing $json_file"
@@ -157,13 +158,13 @@ else
         > "$json_file"
 fi
 
-
 echo "✅ Updated JSON File: $json_file"
 cat "$json_file"  # Print the final JSON for verification
 echo " "
-## Showing the commands so that the developer can push the changes himself/herself
+
+# Step 12: Showing the commands so that the developer can push the changes himself/herself
 echo "🚨 Commands for releasing the changes applied in commit $commit_hash to clients 🚨"
 echo "git checkout $branch_name"
-echo "git add."
+echo "git add ."
 echo "git commit -m "$tag""
 echo "git push origin $branch_name"
