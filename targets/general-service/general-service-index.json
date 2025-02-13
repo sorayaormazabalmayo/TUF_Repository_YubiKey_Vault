@@ -1,0 +1,11 @@
+{
+  "general-service": {
+    "bytes": "22321049",
+    "path": "https://artifactregistry.googleapis.com/download/v1/projects/polished-medium-445107-i9/locations/europe-southwest1/repositories/nebula-storage/files/general-service:v2025.02.13-shac7239be:general-service:download?alt=media",
+    "hashes": {
+      "sha256": "60f5676c2eefdeba79a943a689b32bf11652ace6747cccf6846bdf930cf98bb7"
+    },
+    "version": "v2025.02.13-shac7239be",
+    "release-date": "2025.02.13.09.28.00"
+  }
+}
