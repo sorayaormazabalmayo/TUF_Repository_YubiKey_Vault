@@ -65,15 +65,15 @@ echo "🔍 Tag associated with commit $commit_hash: $tag"
 # Downloading the .zip from GitHub
 
 mkdir GitHubRelease
-wget -P GitHubRelease https://github.com/sorayaormazabalmayo/tunnel-integration/releases/download/$tag/tunnel-integration.zip
+wget -P GitHubRelease https://github.com/sorayaormazabalmayo/$service/releases/download/$tag/$service.zip
 
 # Unzip the .zip into the same directory
-unzip GitHubRelease/tunnel-integration.zip -d GitHubRelease
+unzip GitHubRelease/$service.zip -d GitHubRelease
 
 # Getting the sha256
 
-sha256_GitHubRelease=$(sha256sum GitHubRelease/build/$service | awk '{print $1}')
-size_GitHubRelease=$(stat --format="%s" GitHubRelease/build/$service)
+sha256_GitHubRelease=$(sha256sum GitHubRelease/bin/$service | awk '{print $1}')
+size_GitHubRelease=$(stat --format="%s" GitHubRelease/bin/$service)
 
 rm -rf GitHubRelease
 
