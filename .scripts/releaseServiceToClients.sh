@@ -75,7 +75,7 @@ unzip GitHubRelease/$service.zip -d GitHubRelease
 sha256_GitHubRelease=$(sha256sum GitHubRelease/$service | awk '{print $1}')
 size_GitHubRelease=$(stat --format="%s" GitHubRelease/$service)
 
-#rm -rf GitHubRelease
+rm -rf GitHubRelease
 
 echo "The digest (sha256) of the GitHub Release is: $sha256_GitHubRelease"
 echo "File size: $size_GitHubRelease bytes"
@@ -100,7 +100,7 @@ size_GARRelease=$(stat --format="%s" GARRelease/$service)
 echo "The digest (sha256) of the GitHub Release is: $sha256_GARRelease"
 echo "File size: $size_GARRelease bytes"
 
-#rm -rf GARRelease
+rm -rf GARRelease
 
 # Validate SHA256 comparison
 if [[ -z "$sha256_GitHubRelease" || -z "$sha256_GARRelease" ]]; then
