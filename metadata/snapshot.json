@@ -2,18 +2,18 @@
  "signatures": [
   {
    "keyid": "acfcd243f8f265eaa360f8a2a0d31b793a0b194030056a36f6aca09d9a0077a0",
-   "sig": "30460221009c4580a170dce0cc19719cfc5fb22fc1551de8fd148d6f44cf11b9c067df20a50221008083bcbbbef4d4f6b5b91d06748d709297cb2d94395f555326bde18cabc09013"
+   "sig": "30460221009394d7adf532e9d1c2ffc1e8c0f94b9cbec56a787121a72a4a19870af5aca0a3022100e90f358e5bd3000472cd6668e6a224356728091eecc7705abfec50dabbf4443d"
   }
  ],
  "signed": {
   "_type": "snapshot",
-  "expires": "2026-02-20T15:57:21Z",
+  "expires": "2026-02-20T16:11:48Z",
   "meta": {
    "device-cli.json": {
     "version": 11
    },
    "general-service.json": {
-    "version": 11
+    "version": 12
    },
    "nebula-standalone.json": {
     "version": 9
@@ -29,6 +29,6 @@
    }
   },
   "spec_version": "1.0.31",
-  "version": 81
+  "version": 82
  }
 }
