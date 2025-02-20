@@ -68,12 +68,12 @@ mkdir GitHubRelease
 wget -P GitHubRelease https://github.com/sorayaormazabalmayo/$service/releases/download/$tag/$service.zip
 
 # Unzip the .zip into the same directory
-unzip GitHubRelease/$service.zip -d GitHubRelease
+#unzip GitHubRelease/$service.zip -d GitHubRelease
 
 # Getting the sha256
 
-sha256_GitHubRelease=$(sha256sum GitHubRelease/$service | awk '{print $1}')
-size_GitHubRelease=$(stat --format="%s" GitHubRelease/$service)
+sha256_GitHubRelease=$(sha256sum GitHubRelease/$service.zip | awk '{print $1}')
+size_GitHubRelease=$(stat --format="%s" GitHubRelease/$service.zip)
 
 rm -rf GitHubRelease
 
@@ -88,14 +88,14 @@ gcloud artifacts files download \
     --location=europe-southwest1 \
     --repository=nebula-storage \
     --destination=GARRelease \
-    $service:$tag:$service \
+    $service:$tag:$service.zip \
     --verbosity=debug
 
 # Rename the downloaded file
-mv GARRelease/* GARRelease/$service
+mv GARRelease/* GARRelease/$service.zip
 
-sha256_GARRelease=$(sha256sum GARRelease/$service | awk '{print $1}')
-size_GARRelease=$(stat --format="%s" GARRelease/$service)
+sha256_GARRelease=$(sha256sum GARRelease/$service.zip | awk '{print $1}')
+size_GARRelease=$(stat --format="%s" GARRelease/$service.zip)
 
 echo "The digest (sha256) of the GitHub Release is: $sha256_GARRelease"
 echo "File size: $size_GARRelease bytes"
@@ -128,7 +128,7 @@ cd targets/${service}
 # Step 10: Setting the variables for modifying the index.json
 
 new_bytes=$size_GARRelease
-new_path="https://artifactregistry.googleapis.com/download/v1/projects/polished-medium-445107-i9/locations/europe-southwest1/repositories/nebula-storage/files/$service:$tag:$service:download?alt=media"
+new_path="https://artifactregistry.googleapis.com/download/v1/projects/polished-medium-445107-i9/locations/europe-southwest1/repositories/nebula-storage/files/$service:$tag:$service.zip:download?alt=media"
 new_sha256=$sha256_GARRelease
 new_version=$tag
 new_release_date=$(TZ="Europe/Madrid" date +"%Y.%m.%d.%H.%M.%S")
