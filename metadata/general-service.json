@@ -2,22 +2,22 @@
  "signatures": [
   {
    "keyid": "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a",
-   "sig": "30450221008ab44880554526dac9af800752252677cf9bc5b72b1f1476f46b60e2a170081902206862322f93c7d655b636ab7b689007d646a667a65c50ba108dd8aad7f2557b21"
+   "sig": ""
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2026-02-24T10:57:46Z",
+  "expires": "2026-02-24T11:13:41Z",
   "spec_version": "1.0.31",
   "targets": {
    "general-service/general-service-index.json": {
     "hashes": {
-     "sha256": "2007df8b4072b35cf74ec8a1823136c08b9cb435ccc8360ee6e53496cb8f98c1"
+     "sha256": "58090301b548069d4dd70e8aaa02811e1c8961a43b1f4c978cd171282458a80a"
     },
     "length": 487
    }
   },
-  "version": 17,
+  "version": 18,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
