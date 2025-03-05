@@ -2,22 +2,15 @@
  "signatures": [
   {
    "keyid": "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a",
-   "sig": "3046022100caa82bdfba6631168b73af952d262840ad047c3921b610f848581c42223e8a16022100e9ca0722b8ababfbc9235c94fb1c5c49d1c3a15714e0b6b14b06e457adf93975"
+   "sig": ""
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2026-01-27T11:44:37Z",
+  "expires": "2026-03-05T15:16:59Z",
   "spec_version": "1.0.31",
-  "targets": {
-   "nebula-standalone/nebula-standalone-index.json": {
-    "hashes": {
-     "sha256": "a334348a64b0a0ebb6debd2da138c19a21d5995544f02faf8ac0db74b210a0c9"
-    },
-    "length": 598
-   }
-  },
-  "version": 9,
+  "targets": {},
+  "version": 10,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
