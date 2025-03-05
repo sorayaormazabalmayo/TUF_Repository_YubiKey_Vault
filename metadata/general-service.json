@@ -2,22 +2,22 @@
  "signatures": [
   {
    "keyid": "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a",
-   "sig": "3045022100d7bf8618de1461e02ee6c4895ea5b01e51d482d7a9655f5a8f90b2f6cfc635c6022034aef283d3b04573f7388f7639af0d1538b1984528039a0b31caad6ca8d5930f"
+   "sig": "304502204d97e375c35a1a80de64397114d0d7561614ea1d5203b0a8c33952b1b2306c2b022100ec1ccf1a8ef154b0345c16e20e102e35e590a6212707b02d99e459d76a355527"
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2026-03-05T09:02:37Z",
+  "expires": "2026-03-05T10:27:46Z",
   "spec_version": "1.0.31",
   "targets": {
    "general-service/general-service-index.json": {
     "hashes": {
-     "sha256": "0958a7e63632b6f1051750c00f7a75c1da94da7662408963d42ebbc5b9992215"
+     "sha256": "71b81f4a4b97f1ef22dc838e859603b0a69ec7ee41fb5101c867f5f17ecd55b9"
     },
     "length": 487
    }
   },
-  "version": 50,
+  "version": 51,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
