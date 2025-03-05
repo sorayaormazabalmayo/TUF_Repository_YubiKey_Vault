@@ -23,62 +23,6 @@
      "keyids": [
       "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a"
      ],
-     "name": "device-cli",
-     "paths": [
-      "device-cli/*",
-      "device-cli/*/*",
-      "device-cli/*/*/*",
-      "device-cli/*/*/*/*"
-     ],
-     "terminating": true,
-     "threshold": 1
-    },
-    {
-     "keyids": [
-      "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a"
-     ],
-     "name": "nebula-standalone",
-     "paths": [
-      "nebula-standalone/*",
-      "nebula-standalone/*/*",
-      "nebula-standalone/*/*/*",
-      "nebula-standalone/*/*/*/*"
-     ],
-     "terminating": true,
-     "threshold": 1
-    },
-    {
-     "keyids": [
-      "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a"
-     ],
-     "name": "tunnel-integration",
-     "paths": [
-      "tunnel-integration/*",
-      "tunnel-integration/*/*",
-      "tunnel-integration/*/*/*",
-      "tunnel-integration/*/*/*/*"
-     ],
-     "terminating": true,
-     "threshold": 1
-    },
-    {
-     "keyids": [
-      "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a"
-     ],
-     "name": "space",
-     "paths": [
-      "space/*",
-      "space/*/*",
-      "space/*/*/*",
-      "space/*/*/*/*"
-     ],
-     "terminating": true,
-     "threshold": 1
-    },
-    {
-     "keyids": [
-      "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a"
-     ],
      "name": "general-service",
      "paths": [
       "general-service/*",
