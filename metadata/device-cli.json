@@ -2,22 +2,15 @@
  "signatures": [
   {
    "keyid": "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a",
-   "sig": "3045022045737717a0d8b3d52f5bfc6586df98e24bfac992fe700fae3db4bed38688193e0221008b0ac2a8cb6ccfb32ac8eb02cb537074e8375309d0dc5c95fb83d2ea2530233f"
+   "sig": "3044022021c2c0dd9aacc332f694ad0666e04121d4b46e987bdca82e0fefba1a2616d30b0220259e5a31219d565e7b3da94926f3909d8ea60128754e28756b0b228548475d62"
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2026-01-28T08:44:22Z",
+  "expires": "2026-03-05T15:16:59Z",
   "spec_version": "1.0.31",
-  "targets": {
-   "device-cli/device-cli-index.json": {
-    "hashes": {
-     "sha256": "f7d03c2a04b70ba56fcd3adf4300458b6b269f5ccf84916a9555c17a4641ff25"
-    },
-    "length": 577
-   }
-  },
-  "version": 11,
+  "targets": {},
+  "version": 12,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
