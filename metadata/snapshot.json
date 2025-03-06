@@ -9,23 +9,8 @@
   "_type": "snapshot",
   "expires": "2026-03-05T15:20:46Z",
   "meta": {
-   "device-cli.json": {
-    "version": 12
-   },
    "general-service.json": {
     "version": 51
-   },
-   "nebula-standalone.json": {
-    "version": 10
-   },
-   "space.json": {
-    "version": 3
-   },
-   "targets.json": {
-    "version": 33
-   },
-   "tunnel-integration.json": {
-    "version": 34
    }
   },
   "spec_version": "1.0.31",
