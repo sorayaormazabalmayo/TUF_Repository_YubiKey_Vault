@@ -1,11 +1,11 @@
 {
   "general-service": {
-    "bytes": "11449883",
-    "path": "https://artifactregistry.googleapis.com/download/v1/projects/polished-medium-445107-i9/locations/europe-southwest1/repositories/nebula-storage/files/general-service:v2025.03.11-sha.29ee918:general-service.zip:download?alt=media",
+    "bytes": "11449869",
+    "path": "https://artifactregistry.googleapis.com/download/v1/projects/polished-medium-445107-i9/locations/europe-southwest1/repositories/nebula-storage/files/general-service:v2025.03.11-sha.1a43f3f:general-service.zip:download?alt=media",
     "hashes": {
-      "sha256": "d5dbf6af0192972e847d2fc6e5b376141c0e91485dc0319ef5d7226f9a2c8faa"
+      "sha256": "6e6cd4e40157b3bed4a4ee1a60eac3725d286fa4bf806b086839c6bc2587b881"
     },
-    "version": "v2025.03.11-sha.29ee918",
-    "release-date": "2025.03.11.12.07.26"
+    "version": "v2025.03.11-sha.1a43f3f",
+    "release-date": "2025.03.11.12.18.21"
   }
 }
