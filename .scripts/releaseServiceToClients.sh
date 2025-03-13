@@ -37,6 +37,10 @@ fi
 
 # Getting the hash associated with the commit 
 
+curl -s -H "Accept: application/vnd.github.v3+json" \
+     "https://api.github.com/repos/$repo_owner/$service/tags"
+
+
 tag=$(curl -s -H "Accept: application/vnd.github.v3+json" \
     "https://api.github.com/repos/$repo_owner/$service/tags" | jq -r 'map(select(.commit.sha == "'$commit_hash'")) | .[0].name')
 
