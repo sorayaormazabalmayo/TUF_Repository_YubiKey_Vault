@@ -2,7 +2,7 @@
  "signatures": [
   {
    "keyid": "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a",
-   "sig": "3045022079a7d75f7cadecaa5f9f4881daa2b2feaea643d921029525b7b67eeb053a3632022100dbc7f3bd602b98371be52c68425fc76b3580c4f39a323f093a540c300c4685c2"
+   "sig": "304402201522653e149c69be24538ccad22419048436f34167af8665d223c1cdcdcba48b022038dfd868eed5d81034114ca8b1d15b488125d157edf0fcfa0b89a07854ca944d"
   }
  ],
  "signed": {
@@ -32,13 +32,27 @@
      ],
      "terminating": true,
      "threshold": 1
+    },
+    {
+     "keyids": [
+      "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a"
+     ],
+     "name": "nebula-on-premise-linux",
+     "paths": [
+      "nebula-on-premise-linux/*",
+      "nebula-on-premise-linux/*/*",
+      "nebula-on-premise-linux/*/*/*",
+      "nebula-on-premise-linux/*/*/*/*"
+     ],
+     "terminating": true,
+     "threshold": 1
     }
    ]
   },
-  "expires": "2026-02-13T06:58:59Z",
+  "expires": "2026-03-26T07:29:55Z",
   "spec_version": "1.0.31",
   "targets": {},
-  "version": 33,
+  "version": 34,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
