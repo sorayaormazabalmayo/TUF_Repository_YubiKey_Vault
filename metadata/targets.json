@@ -2,13 +2,21 @@
  "signatures": [
   {
    "keyid": "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a",
-   "sig": "3045022100d3de1baa2b8405fd65ebaa7a9ad5726482927b62232f30724cfeaa68891881d2022079035639bb7ed942337301cccb7a6173025844c5d7c718bb8c9753a2712fd2fd"
+   "sig": ""
   }
  ],
  "signed": {
   "_type": "targets",
   "delegations": {
    "keys": {
+    "45f93c1f384289cf6bd828f252af5e27db55d4d8c6c32289f736c660b70b877a": {
+     "keytype": "ecdsa",
+     "keyval": {
+      "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEUpNdeCxVJteUu84CFK4PT3f/uEIk\npNY6gZMsUTGFMl44h2xgv1GcZcc9kHS8e0shv8Memx8asFsqbJg4nnsI6g==\n-----END PUBLIC KEY-----\n"
+     },
+     "scheme": "ecdsa-sha2-nistp256",
+     "x-tuf-on-ci-online-uri": "azurekms://nebula-on-premise-linux.vault.azure.net/keys/nebula-on-premise-linux/2d57883995774f3b9253f2a1d2863256"
+    },
     "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a": {
      "keytype": "ecdsa",
      "keyval": {
@@ -35,7 +43,7 @@
     },
     {
      "keyids": [
-      "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a"
+      "45f93c1f384289cf6bd828f252af5e27db55d4d8c6c32289f736c660b70b877a"
      ],
      "name": "nebula-on-premise-linux",
      "paths": [
@@ -49,7 +57,7 @@
     }
    ]
   },
-  "expires": "2026-03-27T09:29:51Z",
+  "expires": "2026-03-27T09:34:39Z",
   "spec_version": "1.0.31",
   "targets": {},
   "version": 36,
