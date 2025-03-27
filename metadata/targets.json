@@ -9,14 +9,6 @@
   "_type": "targets",
   "delegations": {
    "keys": {
-    "45f93c1f384289cf6bd828f252af5e27db55d4d8c6c32289f736c660b70b877a": {
-     "keytype": "ecdsa",
-     "keyval": {
-      "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEUpNdeCxVJteUu84CFK4PT3f/uEIk\npNY6gZMsUTGFMl44h2xgv1GcZcc9kHS8e0shv8Memx8asFsqbJg4nnsI6g==\n-----END PUBLIC KEY-----\n"
-     },
-     "scheme": "ecdsa-sha2-nistp256",
-     "x-tuf-on-ci-online-uri": "azurekms://nebula-on-premise-linux.vault.azure.net/keys/nebula-on-premise-linux/2d57883995774f3b9253f2a1d2863256"
-    },
     "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a": {
      "keytype": "ecdsa",
      "keyval": {
@@ -43,7 +35,7 @@
     },
     {
      "keyids": [
-      "45f93c1f384289cf6bd828f252af5e27db55d4d8c6c32289f736c660b70b877a"
+      "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a"
      ],
      "name": "nebula-on-premise-linux",
      "paths": [
