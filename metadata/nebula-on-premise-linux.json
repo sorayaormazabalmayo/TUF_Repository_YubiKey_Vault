@@ -7,10 +7,17 @@
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2026-03-26T07:29:55Z",
+  "expires": "2026-03-27T09:15:45Z",
   "spec_version": "1.0.31",
-  "targets": {},
-  "version": 1,
+  "targets": {
+   "nebula-on-premise-linux/nebula-on-premise-linux-index.json": {
+    "hashes": {
+     "sha256": "f664488ac4d445f8933714c7e17d95a8d78331781576b6d00e4b67135e11abbe"
+    },
+    "length": 513
+   }
+  },
+  "version": 10,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
