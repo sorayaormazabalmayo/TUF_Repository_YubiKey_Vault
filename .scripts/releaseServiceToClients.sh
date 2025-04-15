@@ -8,7 +8,7 @@ repo_owner="sorayaormazabalmayo"
 git pull 
 
 # Step 2: Enforce strict error handling
-set -eo pipefail  # Fail the script if any command in a pipeline fails.
+set -eo pipefail 
 
 # Step 3: Read environment variables
 read -r service <<< "${SERVICE:-}"
@@ -31,42 +31,35 @@ fi
 
 # Step 6: Checking that the provided service and commit had not been compromised
 
-## Now, before releasing the updates to the clients, I would like to ensure that there has not been any man in the middle. 
-## For doing so, the hash from GitHub Release and the GAR are going to be compared.
-## Also, in this way, we will ensure that we are referring to the same release. 
+# Before releasing the update to clients, verify the integrity of the release.
+# Compare the hash from the GitHub Release with the one from GAR (Google Artifact Registry)
+# to ensure there has been no man-in-the-middle attack and that both point to the same release.
 
 # Getting the hash associated with the commit 
 
 curl -s -H "Accept: application/vnd.github.v3+json" \
      "https://api.github.com/repos/$repo_owner/$service/tags"
 
-
 tag=$(curl -s -H "Accept: application/vnd.github.v3+json" \
     "https://api.github.com/repos/$repo_owner/$service/tags" | jq -r 'map(select(.commit.sha == "'$commit_hash'")) | .[0].name')
 
-# Error Handling
 if [[ -z "$tag" || "$tag" == "null" ]]; then
     echo "❌ No tag found for commit $commit_hash"
     exit 1
 fi
-
 echo "🔍 Tag associated with commit $commit_hash: $tag"
 
 # Downloading the .zip from GitHub
-
 mkdir GitHubRelease
 wget -P GitHubRelease https://github.com/sorayaormazabalmayo/$service/releases/download/$tag/$service.zip
 
-# Unzip the .zip into the same directory
-#unzip GitHubRelease/$service.zip -d GitHubRelease
+# Unzip GitHubRelease/$service.zip -d GitHubRelease
 
 # Getting the sha256
-
 sha256_GitHubRelease=$(sha256sum GitHubRelease/$service.zip | awk '{print $1}')
 size_GitHubRelease=$(stat --format="%s" GitHubRelease/$service.zip)
 
 rm -rf GitHubRelease
-
 echo "The digest (sha256) of the GitHub Release is: $sha256_GitHubRelease"
 echo "File size: $size_GitHubRelease bytes"
 
@@ -106,17 +99,14 @@ else
 fi
 
 # Step 7: Creating the branch sign/ for updating the -index that is going to be provided to the client
-
 branch_name="sign/$commit_hash"
 git branch $branch_name
 echo "Changed to branch $branch_name"
 
 # Step 8: Going to the targets repository, exactly to the folder of the service that wants to be modified
-
 cd targets/${service}
 
 # Step 9: Setting the variables for modifying the index.json
-
 new_bytes=$size_GARRelease
 new_path="https://artifactregistry.googleapis.com/download/v1/projects/polished-medium-445107-i9/locations/europe-southwest1/repositories/nebula-storage/files/$service:$tag:$service.zip:download?alt=media"
 new_sha256=$sha256_GARRelease
@@ -125,7 +115,6 @@ new_release_date=$(TZ="Europe/Madrid" date +"%Y.%m.%d.%H.%M.%S")
 json_file="${service}-index.json"
 
 # Step 10: Creating the new target json that will allow the client to download the last artifact
-
 if [[ -f "$json_file" ]]; then
   echo "✏️ Overwriting existing $json_file"
   jq -n --arg service "$service" \
@@ -152,7 +141,7 @@ echo "✅ Updated JSON File: $json_file"
 cat "$json_file"  # Print the final JSON for verification
 echo " "
 
-# Step 11: Showing the commands so that the developer can push the changes himself/herself
+# Step 11: Showing the commands so that the developer can push the changes 
 echo "🚨 Commands for releasing the changes applied in commit $commit_hash to clients 🚨"
 echo "git checkout $branch_name"
 echo "git add ."
