@@ -2,7 +2,7 @@
  "signatures": [
   {
    "keyid": "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a",
-   "sig": "3045022071fe9eef2f7d2f2c1bf3ec3577f9165b1b1c425e4e72b2e6a9861de47a26726c022100e4f4e4c973650c4de76988648f04c29a3fb0eb4d7b234de68fe0809e619599f3"
+   "sig": ""
   }
  ],
  "signed": {
@@ -82,10 +82,24 @@
      ],
      "terminating": true,
      "threshold": 1
+    },
+    {
+     "keyids": [
+      "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a"
+     ],
+     "name": "nebula-on-premise-macOS",
+     "paths": [
+      "nebula-on-premise-macOS/*",
+      "nebula-on-premise-macOS/*/*",
+      "nebula-on-premise-macOS/*/*/*",
+      "nebula-on-premise-macOS/*/*/*/*"
+     ],
+     "terminating": true,
+     "threshold": 1
     }
    ]
   },
-  "expires": "2026-04-04T12:08:13Z",
+  "expires": "2026-04-16T08:16:37Z",
   "spec_version": "1.0.31",
   "targets": {},
   "version": 36,
