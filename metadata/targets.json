@@ -23,20 +23,6 @@
      "keyids": [
       "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a"
      ],
-     "name": "general-service",
-     "paths": [
-      "general-service/*",
-      "general-service/*/*",
-      "general-service/*/*/*",
-      "general-service/*/*/*/*"
-     ],
-     "terminating": true,
-     "threshold": 1
-    },
-    {
-     "keyids": [
-      "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a"
-     ],
      "name": "nebula-on-premise-linux",
      "paths": [
       "nebula-on-premise-linux/*",
