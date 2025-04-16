@@ -1,11 +1,11 @@
 {
   "nebula-on-premise-linux": {
-    "bytes": "11453488",
-    "path": "https://artifactregistry.googleapis.com/download/v1/projects/polished-medium-445107-i9/locations/europe-southwest1/repositories/nebula-storage/files/nebula-on-premise-linux:v2025.03.26-sha.96c87be:nebula-on-premise-linux.zip:download?alt=media",
+    "bytes": "10896575",
+    "path": "https://artifactregistry.googleapis.com/download/v1/projects/polished-medium-445107-i9/locations/europe-southwest1/repositories/nebula-storage/files/nebula-on-premise-linux:v2025.04.15-sha.50a2fe9:nebula-on-premise-linux.zip:download?alt=media",
     "hashes": {
-      "sha256": "d0233d1c90c8c2b07d51dfd626c2dcff929016cc312d2ca01da34493a6fbc07d"
+      "sha256": "5179435557e5cc13d2b4726678589c2574d02035cd263a32037702ebda4de290"
     },
-    "version": "v2025.03.26-sha.96c87be",
-    "release-date": "2025.03.26.15.41.08"
+    "version": "v2025.04.15-sha.50a2fe9",
+    "release-date": "2025.04.15.17.15.39"
   }
 }
