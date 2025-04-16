@@ -9,9 +9,6 @@
   "_type": "snapshot",
   "expires": "2026-04-16T08:49:38Z",
   "meta": {
-   "general-service.json": {
-    "version": 107
-   },
    "nebula-on-premise-linux.json": {
     "version": 18
    },
