@@ -3,7 +3,6 @@
   {
    "keyid": "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a",
    "sig": "3046022100c56948f3f8c472c9967e5a01cd013d1878d2d2470fbe780593d04949a73575e0022100deb09c27016664f02ca19b8ba27375fa685cf454208c6aec74b338f18643ade8"
-  }
  ],
  "signed": {
   "_type": "targets",
@@ -19,20 +18,6 @@
     }
    },
    "roles": [
-    {
-     "keyids": [
-      "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a"
-     ],
-     "name": "general-service",
-     "paths": [
-      "general-service/*",
-      "general-service/*/*",
-      "general-service/*/*/*",
-      "general-service/*/*/*/*"
-     ],
-     "terminating": true,
-     "threshold": 1
-    },
     {
      "keyids": [
       "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a"
