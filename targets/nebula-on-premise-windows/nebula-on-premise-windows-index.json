@@ -1,11 +1,11 @@
 {
   "nebula-on-premise-windows": {
-    "bytes": "5320495",
-    "path": "https://artifactregistry.googleapis.com/download/v1/projects/polished-medium-445107-i9/locations/europe-southwest1/repositories/nebula-storage/files/nebula-on-premise-windows:v2025.04.30-sha.f2fdbfd:nebula-on-premise-windows.zip:download?alt=media",
+    "bytes": "5320494",
+    "path": "https://artifactregistry.googleapis.com/download/v1/projects/polished-medium-445107-i9/locations/europe-southwest1/repositories/nebula-storage/files/nebula-on-premise-windows:v2025.04.30-sha.a2e143d:nebula-on-premise-windows.zip:download?alt=media",
     "hashes": {
-      "sha256": "2bafe48b54821a59467a502c5c8fde800ead1b189ebd454b994da9875bc7c8f8"
+      "sha256": "53addcd20f0fe2a3fb22d049495bc6c7b7a5a8dc7d1f028410937db66d701bb5"
     },
-    "version": "v2025.04.30-sha.f2fdbfd",
-    "release-date": "2025.04.30.11.41.19"
+    "version": "v2025.04.30-sha.a2e143d",
+    "release-date": "2025.04.30.12.26.14"
   }
 }
