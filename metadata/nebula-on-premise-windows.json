@@ -2,22 +2,22 @@
  "signatures": [
   {
    "keyid": "47167821e560e0b9e078f6ce5654683b880232e473daaf9b60b335dbcaf5740a",
-   "sig": "304502206a17ac9ada3b736af4d3081f64242a89c25981e762119829324e1fee723a79a2022100b9606534364c1e79f3f37f95be3236251906799a255d826f5d21d75a9629845c"
+   "sig": "30440220542811b75875d027cf6495c5638d21d419cc3e8899ef79f07586a5d00ac0680602202a37066d96abb09f506ddabc4e03c66bb31ea8f3857349e3152b358938ad284c"
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2026-05-13T13:42:55Z",
+  "expires": "2026-05-14T08:38:10Z",
   "spec_version": "1.0.31",
   "targets": {
    "nebula-on-premise-windows/nebula-on-premise-windows-index.json": {
     "hashes": {
-     "sha256": "3f7bcce0c009d0dea172a27a5bb5b4c1c9f172b34f29fcf217ed03ddab89d18f"
+     "sha256": "f87c91ddd4e23a38530553e11763e4cfd20c0f15f5d400e204072ba0dfc5af98"
     },
     "length": 518
    }
   },
-  "version": 29,
+  "version": 30,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
